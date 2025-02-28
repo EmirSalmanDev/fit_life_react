@@ -18,7 +18,7 @@ This is my **first** React.js project, built to explore my current knowledge and
 1. Clone the repository
 
    ```http
-   git clone https://github.com/EmirSalmanDev/fit_life.git
+   git clone https://github.com/EmirSalmanDev/fit_life_react.git
    ```
 
 2. Install dependencies
