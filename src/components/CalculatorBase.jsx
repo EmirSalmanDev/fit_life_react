@@ -15,8 +15,8 @@ function CalculatorBase({
     <div>
       <div className="gender_container">
         <div
-          className={`gender_box ${gender === "female" ? "selected" : ""}`}
-          onClick={() => setGender("female")}
+          className={`gender_box ${gender === "male" ? "selected" : ""}`}
+          onClick={() => setGender("male")}
         >
           <div className="gender_symbol">
             <img src={MaleSymbol} alt="Erkek" className="img-fluid" />
@@ -24,8 +24,8 @@ function CalculatorBase({
           <p>Male</p>
         </div>
         <div
-          className={`gender_box ${gender === "male" ? "selected" : ""}`}
-          onClick={() => setGender("male")}
+          className={`gender_box ${gender === "female" ? "selected" : ""}`}
+          onClick={() => setGender("female")}
         >
           <div className="gender_symbol">
             <img src={FemaleSymbol} alt="Kadın" className="img-fluid" />
