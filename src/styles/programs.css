@@ -1,0 +1,191 @@
+.programs_page_banner {
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 2rem 5rem;
+}
+
+.programs_page_banner:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.program .container>* {
+    margin-top: 16px;
+}
+
+.program i {
+    color: var(--red);
+}
+
+.program .highlight {
+    font-weight: bolder;
+    color: var(--red);
+}
+
+.program h2 {
+    font-size: 1.7rem;
+}
+
+.program h3 {
+    font-size: 1.3rem;
+}
+
+.program p {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.program_table {
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    margin: 25px 0!important;
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.program_table thead tr {
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.program_table th,
+.program_table td {
+    padding: 12px 15px;
+}
+
+.program_table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+}
+
+.program_table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.program_table tbody tr:last-child {
+    border-bottom: 2px solid var(--red);
+}
+
+.program_table tbody tr:hover {
+    background-color: #f5e1e1;
+}
+
+.program ol li {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.program ul {
+    list-style-type: disc;
+}
+
+.program ul li {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.program ul li:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+.program .annotation {
+    font-size: 16px;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.program .annotation::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--red);
+    height: 100%;
+    width: 2px;
+    box-sizing: border-box;
+}
+
+#ppl .container h2, #fullBody .container h2 {
+    position: relative;
+}
+
+#ppl .container h2::before, #fullBody .container h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -40px;
+    background-color: #dddd;
+    height: 2px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width:768px) {
+    .program_table {
+        font-size: 1rem;
+        margin: 20px 0!important;
+    }
+
+    .program h2 {
+        font-size: 1.6rem;
+    }
+
+    .program h3 {
+        font-size: 1.2rem;
+    }
+
+    .program p {
+        font-size: 18px;
+    }
+
+    .program ol li {
+        font-size: 18px;
+    }
+
+    .program ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:576px) {
+    .programs_page_banner {
+        padding: 1rem 2.5rem;
+    }
+
+    .program h2 {
+        font-size: 1.5rem;
+    }
+
+    .program h3 {
+        font-size: 1.1rem;
+    }
+
+    .program p {
+        font-size: 17px;
+    }
+
+    .program ol li {
+        font-size: 17px;
+    }
+
+    .program ul li {
+        font-size: 15px;
+    }
+
+    .program_table {
+        font-size: .85rem;
+    }
+}

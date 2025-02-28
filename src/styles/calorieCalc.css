@@ -1,0 +1,340 @@
+.calc_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 6rem;
+    max-width: 1140px;
+}
+
+.calculator_header {
+    padding-left: 2rem;
+}
+
+.calc_skeleton {
+    display: flex;
+    justify-content: center;
+}
+
+.calc_base {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+.slider_box {
+    margin: 20px 0;
+}
+
+.slider_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.slider_info{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 14px;
+    background-color: #eeeded;
+    border-radius: 2px;
+}
+
+.slider-range {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -3px;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: #e8e6e6;
+    outline: none;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(100, 100, 111, 0.5);
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+    background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.report {
+    flex: 1;
+    margin-top: 20px;
+    padding: 15px;
+} 
+
+.report h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.report h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.report span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.report p {
+    font-size: 16px;
+    color: #555;
+}
+
+.report_output {
+    position: relative;
+}
+
+.report_output:not(:last-child):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: lightgray;
+    height: 1px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.report_output:not(:last-child) {
+    margin-bottom: .7rem;
+}
+
+.gender_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 25px;
+}
+
+.gender_box {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    overflow: hidden;
+    transition: .3s;
+    max-width: 230px;
+    background-color: #f3f2f2;
+}
+
+.gender_box p {
+    padding: 5px;
+}
+
+.gender_symbol {
+    background-color: #dbd1b9;
+    padding: .7rem;
+}
+
+.gender_symbol img{
+    max-height: 200px;
+    height: auto;
+}
+
+.gender_box.selected {
+    border: 3px solid var(--red);
+}
+
+.gender_box:hover {
+    cursor: pointer;
+    border: 3px solid var(--red);
+    box-shadow: 0 0 5px rgba(188, 40, 40, 0.5);
+}
+
+.gender_box.selected:hover {
+    border: 3px solid var(--red);
+    box-shadow: none;
+}
+
+.age_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.age_container label {
+    flex: 2;
+    font-size: 18px;
+}
+
+.age_input {
+    padding: 12px;
+    border: none;
+    background-color: #eeeded;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 25%;
+    flex: 1;
+}
+
+.age_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.age_input { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+    border: 2px solid var(--white);
+}
+
+.age_input:focus {
+    outline: none;
+    border: 2px solid var(--red);
+    box-shadow: 0 0 5px rgba(188, 40, 40, 0.5);
+}
+
+
+@media(max-width:992px) {
+    .calculator {
+        padding: 2rem 3rem;
+    }
+
+    .calc_base {
+        padding: 2rem 1rem;
+    }
+
+    .calculator_header {
+        padding-left: 1rem;
+    }
+
+    .report {
+        padding: 15px;
+    } 
+
+    .report h2 {
+       font-size: 1.4rem;
+       margin-bottom: .5rem;
+    }
+
+    .report h3 {
+        font-size: .8rem;
+    }
+    .report span {
+        font-size: 1.2rem;
+    }
+
+    .report p {
+        font-size: 14px;
+    }
+
+    .slider_label {
+        font-size: 16px;
+    }
+
+    .slider_info{
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .slider-range {
+        font-size: 12px;
+    }
+
+    .age_container label {
+        font-size: 16px;
+    }
+
+    .age_input {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calc_skeleton {
+        flex-direction: column;
+    }
+
+    .calc_base {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .gender_container {
+        gap: 1rem;
+    }
+
+    .gender_box p {
+        padding: 3px;
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
+    .gender_symbol {
+        padding: .5rem;
+    }
+
+    .slider {
+        margin: 15px 0;
+    }
+
+    .slider_label {
+        font-size: 14px;
+    }
+
+    .slider_info{
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .slider-range {
+        font-size: 12px;
+    }
+
+
+    .age_container label {
+        font-size: 14px;
+    }
+
+    .age_input {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .gender_container {
+        flex-direction: column;
+    }
+}

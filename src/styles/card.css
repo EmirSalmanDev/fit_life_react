@@ -1,0 +1,85 @@
+.card {
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    overflow: hidden;
+    max-width: 300px;
+    background-color: var(--gray);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;}
+/* 
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+} */
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.context {
+    padding: 10px;
+    position: relative;
+}
+
+.card_header {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card_price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.card_price span {
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.card_text {
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.card_btn {
+    margin-top: 5px;
+    padding: .5rem;
+    font-size: .8rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-10%,-20%);
+}
+
+.card_level {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.card_level span {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.card_level svg {
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-10px)!important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px!important;
+}
+
+

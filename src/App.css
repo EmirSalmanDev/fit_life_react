@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+
+:root {
+  --black: #101213;
+  --white: #f7f7f7;
+  --gray: #f9f9f9a0;
+  --red: #bc2828;
+  --darkGray: #15191b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: auto;
+  overflow-x: clip;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: var(--white);
+  font-family: "Prompt", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: auto;
+  overflow-x: clip;
+}
+
+input {
+  font-family: "Prompt", serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 65rem;
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  position: relative;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border: 2px solid var(--red);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--white);
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.btn:hover {
+  color: var(--red);
+}
+
+
+@media (max-width: 992px) {
+  .btn {
+      padding: .8rem 1.6rem;
+      font-size: .75rem;
+    }
+}

@@ -1,0 +1,64 @@
+.bmi_header {
+    font-size: 20px!important;
+}
+
+.bmi_value {
+    font-size: 28px!important;
+    font-weight: bold!important;
+}
+
+.bmi_list {
+    color: #555;
+    padding: 1.2rem 0;
+    font-size: 18px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.bmi_item {
+    margin-bottom: 5px;
+}
+
+.bmi_report_output p {
+    color: black!important;
+    position: relative;
+}
+
+.bmi_report_output .liner:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background-color: lightgray;
+    height: 1px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2; 
+}
+
+
+.ideal_weights  {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ideal_weights p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ideal_weight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ideal_weight:first-child
+{
+    margin-top: 20px;
+}
+
+.ideal_weight span {
+    font-size: 18px;
+}
